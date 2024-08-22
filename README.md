@@ -2,7 +2,7 @@
 
 Its a tool for managing the plan and role permisions
 
-### Installation
+ Installation
 
 You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
