@@ -11,7 +11,7 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/plan_control_manager/css/plan_control_manager.css"
-# app_include_js = "/assets/plan_control_manager/js/plan_control_manager.js"
+app_include_js = "/assets/plan_control_manager/js/overrideuser_qe.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/plan_control_manager/css/plan_control_manager.css"
@@ -28,7 +28,7 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {"User" : "public/js/user.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -114,9 +114,9 @@ app_license = "mit"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+	"User": "plan_control_manager.override.user.CustomUser"
+}
 
 # Document Events
 # ---------------

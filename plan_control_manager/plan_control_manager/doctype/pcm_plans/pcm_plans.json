@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:plan",
+ "creation": "2024-08-23 23:47:50.096602",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "plan",
+  "pcm_role_profile",
+  "pcm_module_profile"
+ ],
+ "fields": [
+  {
+   "fieldname": "plan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plan",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "pcm_role_profile",
+   "fieldtype": "Table",
+   "label": "PCM Role Profile",
+   "options": "PCM Role Profile"
+  },
+  {
+   "fieldname": "pcm_module_profile",
+   "fieldtype": "Table",
+   "label": "PCM Module Profile",
+   "options": "PCM Module Profile"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-25 01:37:50.328087",
+ "modified_by": "Administrator",
+ "module": "Plan Control Manager",
+ "name": "PCM Plans",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

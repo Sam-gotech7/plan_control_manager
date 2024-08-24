@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-23 23:44:49.287575",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "plan_control_options_section",
+  "enable_pcm",
+  "active_plan",
+  "column_break_emep",
+  "default_role_profile",
+  "default_module_profile"
+ ],
+ "fields": [
+  {
+   "fieldname": "plan_control_options_section",
+   "fieldtype": "Section Break",
+   "label": "Plan Control Options"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_pcm",
+   "fieldtype": "Check",
+   "label": "Enable PCM"
+  },
+  {
+   "fieldname": "active_plan",
+   "fieldtype": "Link",
+   "label": "Active Plan",
+   "options": "PCM Plans"
+  },
+  {
+   "fieldname": "column_break_emep",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_role_profile",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Default Role Profile",
+   "mandatory_depends_on": "eval:doc.enable_pcm == 1",
+   "options": "Role Profile"
+  },
+  {
+   "fieldname": "default_module_profile",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Default Module Profile",
+   "mandatory_depends_on": "eval:doc.enable_pcm == 1",
+   "options": "Module Profile"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-08-25 01:41:21.493675",
+ "modified_by": "Administrator",
+ "module": "Plan Control Manager",
+ "name": "PCM Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
