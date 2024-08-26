@@ -18,6 +18,14 @@ frappe.ui.form.on('User', {
                             }
                         };
                     })
+                    frm.set_query('role_profile', function (doc, cdt, cdn) {
+                        let d = locals[cdt][cdn];
+                        return {
+                            filters: {
+                                name: ['in', data.message.role_profiles]
+                            }
+                        };
+                    })
                   
                }
                if(data.message && data.message.module_profile_check){

@@ -36,6 +36,15 @@ frappe.ui.form.UserQuickEntryForm = class UserQuickEntryForm extends frappe.ui.f
                             };
                         };
                     }
+                    if (this.dialog.fields_dict.role_profile) {
+                        this.dialog.fields_dict.role_profile.get_query = function(doc, cdt, cdn) {
+                            return {
+                                filters: {
+                                    name: ['in', data.message.role_profiles]
+                                }
+                            };
+                        };
+                    }
                 }
             }
         }
