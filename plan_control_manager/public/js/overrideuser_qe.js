@@ -56,5 +56,5 @@ frappe.ui.form.UserQuickEntryForm = class UserQuickEntryForm extends frappe.ui.f
     }
 };
 
-// Override the existing Quick Entry form for the User Doctype
-frappe.quick_entry_map['User'] = frappe.ui.form.UserQuickEntryForm;
+// // Override the existing Quick Entry form for the User Doctype
+// frappe.quick_entry_map['User'] = frappe.ui.form.UserQuickEntryForm;

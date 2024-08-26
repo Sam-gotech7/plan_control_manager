@@ -10,22 +10,29 @@ frappe.ui.form.on('User', {
                    }
                })
                if (data.message && data.message.role_profile_check) {
-                    frm.set_query('role_profiles', function (doc, cdt, cdn) {
-                        let d = locals[cdt][cdn];
-                        return {
-                            filters: {
-                                name: ['in', data.message.role_profiles]
-                            }
-                        };
-                    })
-                    frm.set_query('role_profile_name', function (doc, cdt, cdn) {
-                        let d = locals[cdt][cdn];
-                        return {
-                            filters: {
-                                name: ['in', data.message.role_profiles]
-                            }
-                        };
-                    })
+                    if(frm.doc.role_profiles){
+                        frm.set_query('role_profiles', function (doc, cdt, cdn) {
+                            let d = locals[cdt][cdn];
+                            return {
+                                filters: {
+                                    name: ['in', data.message.role_profiles]
+                                }
+                            };
+                        })
+
+                    }
+                    else if(frm.doc.role_profile_name){
+                        frm.set_query('role_profile_name', function (doc, cdt, cdn) {
+                            let d = locals[cdt][cdn];
+                            return {
+                                filters: {
+                                    name: ['in', data.message.role_profiles]
+                                }
+                            };
+                        })
+                    }
+                    
+                    
                   
                }
                if(data.message && data.message.module_profile_check){
