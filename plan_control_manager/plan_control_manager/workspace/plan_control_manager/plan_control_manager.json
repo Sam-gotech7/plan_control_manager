@@ -1,0 +1,49 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"WQD8ozP85p\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Plan Control Manager</span>\",\"col\":12}},{\"id\":\"4qFZebsamr\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"PCM Settings\",\"col\":3}},{\"id\":\"yW768FLjLR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"PCM Plans\",\"col\":3}}]",
+ "creation": "2024-08-23 23:43:01.941705",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "permission",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Plan Control Manager",
+ "links": [],
+ "modified": "2024-08-27 01:13:41.670876",
+ "modified_by": "Administrator",
+ "module": "Plan Control Manager",
+ "name": "Plan Control Manager",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "sequence_id": 28.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "PCM Settings",
+   "link_to": "PCM Setting",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "PCM Plans",
+   "link_to": "PCM Plans",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Plan Control Manager"
+}
