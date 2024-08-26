@@ -18,7 +18,7 @@ frappe.ui.form.on('User', {
                             }
                         };
                     })
-                    frm.set_query('role_profile', function (doc, cdt, cdn) {
+                    frm.set_query('role_profile_name', function (doc, cdt, cdn) {
                         let d = locals[cdt][cdn];
                         return {
                             filters: {
